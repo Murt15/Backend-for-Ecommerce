@@ -1,0 +1,21 @@
+.aboutus h2{
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+}
+
+.aboutus img{
+    float: left;
+    margin: 5px;
+    border-radius: 100px;
+}
+.aboutus p{
+    margin-right: 5px;
+    word-wrap: normal;
+    text-align: justify;
+    font-size: 20px;
+    
+}
+.aboutus{
+    margin-left: 10px;
+    margin-right: 10px;
+}

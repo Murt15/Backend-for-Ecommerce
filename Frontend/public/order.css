@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+.orderDetails {
+    text-align: center;
+    margin: 2rem;
+    width: 1000px;
+    border-bottom: 5px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.div-order-cart {
+    list-style: none;
+    display: flex;
+    text-align: center;
+}
+
+.order-item-list img {
+    height: 120px;
+    width: 120px;
+    margin: 1.5rem;
+    border-radius: 20px;
+    display: block;
+}
+
+.orderDetails h2 {
+    font-size: 150%;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.orderDetails h3 {
+    text-align: center;
+    font-size: 120%;
+}

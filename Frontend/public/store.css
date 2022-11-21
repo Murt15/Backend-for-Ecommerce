@@ -1,0 +1,90 @@
+.music-container {
+    width: 800px;
+    position: relative;
+    left: 23%;
+
+
+
+
+
+}
+
+.music-container h2 {
+    font-family: 'Kaushan Script', cursive;
+    position: relative;
+    left: 45%;
+}
+
+.img-cont {
+    display: flex;
+}
+
+.product-imgs {
+    height: 300px;
+    width: 300px;
+}
+
+.product-details {
+    margin-top: 15px;
+    width: 300px;
+}
+
+.shop-btn {
+    cursor: pointer;
+    float: right;
+    background-color: #b1a296;
+    border: none;
+    border-radius: 3px;
+    width: 100px;
+    height: 35px;
+}
+
+.merch-container {
+    margin-bottom: 20px;
+    width: 800px;
+    position: relative;
+    left: 23%;
+
+
+}
+
+.merch-container h2 {
+    font-family: 'Kaushan Script', cursive;
+    position: relative;
+    left: 45%;
+}
+
+.h3 {
+    text-align: center;
+}
+
+.music-container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.merch-container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.pagination {
+    text-align: center;
+
+
+}
+
+.pagination button {
+    background-color: #e64a1f;
+    border: none;
+    margin: 0.5rem;
+    border-radius: 4px;
+    width: 25px;
+    border: 2px solid black;
+}
+
+.pagination button:hover {
+    background-color: white;
+}
