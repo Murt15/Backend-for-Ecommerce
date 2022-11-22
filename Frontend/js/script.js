@@ -24,7 +24,7 @@ window.addEventListener('DOMContentLoaded',(data)=>{
 function getProducts(page){
     parentNode.innerHTML='';
    
-    axios.get(`http://65.0.93.159:5555/products/music/?page=${page}`)
+    axios.get(`http://3.111.126.129:5555/products/music/?page=${page}`)
     .then((Music) => {
         // console.log(Music.data);
         //console.log(Music.data.data);
@@ -52,7 +52,7 @@ function getProducts(page){
     });
     // mparentNode.innerHTML='';
 
-    // axios.get(`http://65.0.93.159:5555/products/merch/?page=${page}`)
+    // axios.get(`http://3.111.126.129:5555/products/merch/?page=${page}`)
     // .then((Merch)=>{
     //     //console.log(Merch.data.data)
     //     Merch.data.data.forEach(data=>{
@@ -87,7 +87,7 @@ function getCartProducts(page){
     
     var cparentNode = document.getElementById("cart-details");
     cparentNode.innerHTML='';
-    axios.get(`http://65.0.93.159:5555/cart/get-products/?cart=${page}`)      
+    axios.get(`http://3.111.126.129:5555/cart/get-products/?cart=${page}`)      
     .then((Products)=>{
         //console.log(Products.data.data)
         // console.log(Products)
@@ -131,7 +131,7 @@ function addtoCart(event){
            id:id, title:title,imageUrl:imageUrl,price:price,quantity:quantity
         }
 
-        axios.post("http://65.0.93.159:5555/cart/add-product",cart)
+        axios.post("http://3.111.126.129:5555/cart/add-product",cart)
         .then((res)=>{
             // console.log(data);
             console.log();
@@ -173,7 +173,7 @@ function removeFromCart(event) {
         
         
         responseid=event.target.parentElement.id
-        const url="http://65.0.93.159:5555/cart/delete-product/"+responseid
+        const url="http://3.111.126.129:5555/cart/delete-product/"+responseid
         axios.post(url)
         .then(()=>{
             
@@ -266,7 +266,7 @@ const order=document.getElementById('purchase-id')
 
 order.addEventListener('click',placeOrder)
 function placeOrder(event){
-    axios.post(`http://65.0.93.159:5555/cart/postOrder`)
+    axios.post(`http://3.111.126.129:5555/cart/postOrder`)
     .then(res=>{
         console.log(res);
         window.alert('Your Order Has been Sucessfully Placed')

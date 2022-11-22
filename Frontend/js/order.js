@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded',()=>{
 
 
 function getOrder(){
-    axios.get("http://65.0.93.159:5555/cart/get-productsforOrder")
+    axios.get("http://3.111.126.129:5555/cart/get-productsforOrder")
     .then((data)=>{
         console.log(data);
         let prodid=data.data.length;
