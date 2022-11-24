@@ -1,7 +1,7 @@
 
 const oparentNode=document.getElementById('order-page')
 
-
+const url="13.233.195.42";
 
 window.addEventListener('DOMContentLoaded',()=>{
     getOrder();
@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded',()=>{
 
 
 function getOrder(){
-    axios.get("http://3.111.126.129:5555/cart/get-productsforOrder")
+    axios.get(`${url}/cart/get-productsforOrder`)
     .then((data)=>{
         console.log(data);
         let prodid=data.data.length;
