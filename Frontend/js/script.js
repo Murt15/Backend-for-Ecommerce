@@ -1,6 +1,7 @@
 // const mparentNode=document.getElementById("merch-container");
 
-const url="52.91.88.205";
+const url="http://52.91.88.205:5555"
+//const url="http://localhost:5555";
 
 
 const parentNode=document.getElementById("musicContainer");
@@ -15,7 +16,9 @@ const cpagination=document.getElementById("class-pagination");
 
 const order=document.getElementById('purchase-id')
 
+
 order.addEventListener('click',placeOrder)
+
 
 
 // Event Listener For refreshing the Page
@@ -138,7 +141,7 @@ function addtoCart(event){
            id:id, title:title,imageUrl:imageUrl,price:price,quantity:quantity
         }
 
-        axios.post("${url}/cart/add-product",cart)
+        axios.post(`${url}/cart/add-product`,cart)
         .then((res)=>{
             // console.log(data);
             console.log();

@@ -1,7 +1,8 @@
 
 const oparentNode=document.getElementById('order-page')
 
-const url="52.91.88.205";
+ const url="http://52.91.88.205:5555";
+ //const url="http://localhost:5555";
 
 window.addEventListener('DOMContentLoaded',()=>{
     getOrder();
