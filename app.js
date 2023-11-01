@@ -2,6 +2,8 @@ const express=require('express');
 
 const bodyParser=require('body-parser');
 
+const path = require('path');
+
 const cors=require('cors');
 
 const sequelize=require('./utils/database')
@@ -21,7 +23,7 @@ const User=require('./models/user');
 const Orders=require('./models/order');
 
 const orderMusic=require('./models/orderMusic')
-
+//const order=require('./Frontend')
 const app=express();
 //RelationShip
 
@@ -50,6 +52,11 @@ app.use(bodyParser.json({ extended: false }));
 app.use(cors());
 app.use(storeRoutes);
 app.use(cartRoutes);
+
+app.use((req,res)=>{
+  //console.log(req.url)
+  res.sendFile(path.join(__dirname,`Frontend/${req.url}`  ))
+})
 
 
 let tempUser;

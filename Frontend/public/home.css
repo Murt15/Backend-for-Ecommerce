@@ -1,0 +1,70 @@
+.ouralbum {
+    height: 180px;
+    background-color: #7395ae;
+
+}
+
+.ouralbum img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+    left: 48%;
+    top: 25%;
+
+}
+
+.box {
+    width: 350px;
+    border: 2px solid#050505;
+    position: relative;
+    left: 38%;
+    top: 10%;
+}
+
+
+.box button{
+    background-color:#7395ae ;
+    width: 350px;
+    word-wrap: normal;
+    font-size: 200%;
+    margin-top: 0%;
+    text-align: center;
+    border: none;
+}
+
+.container{
+    width: 700px;
+    position: relative;
+    left: 30%;
+}
+.container h2{
+    font-family: 'Kaushan Script', cursive;
+    position: relative;
+    left: 35%;
+}
+.tour-detail{
+    display: flex;
+    padding: 8px;
+    margin: 1rem;
+    border-bottom: 1px solid#b1a296;
+}
+.tour-date{
+    font-weight: bold;
+    width: 15%;
+}
+.tour-place{
+    width: 25%;
+}
+.tour-stadium{
+    
+    width: 50%;
+}
+.buy-tickets-btn{
+    width: 140px;
+    height: 30px;
+    float: right;
+    background-color:#b1a296 ;
+    border: none;
+    border-radius: 2px;
+}
